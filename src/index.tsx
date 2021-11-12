@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import Table from './table';
+import '@arco-design/web-react/dist/css/arco.css';
+import { Button } from '@arco-design/web-react'
+import EditTable from './arcoDemo/Table';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Table />
+    <Button type='primary'>按钮</Button>
+    <EditTable />
   </React.StrictMode>,
   document.getElementById('root')
 );
