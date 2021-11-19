@@ -19,11 +19,13 @@ export const defaultComponents: ComponentsProps = {
     }
 }
 
-export function useComponent(components: ComponentsProps){
+export function useComponent(components?: ComponentsProps){
     const _components = defaultComponents;
     return {
         ComponentTable: _components.table,
-        ComponentHeaderWrapper: _components.header?.wrapper,
-        
+        ComponentHeaderWrapper: _components.header!.wrapper!,
+        ComponentHeaderRow: _components.header?.row,
+        ComponentThead: _components.header?.thead,
+        ComponentTh: _components.header?.th,
     }
 }

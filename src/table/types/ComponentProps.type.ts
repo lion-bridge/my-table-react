@@ -1,18 +1,20 @@
 import React, { ReactNode } from 'react';
+
+type DomEle  = any;
 export interface ComponentsProps {
-    table?: ReactNode;
+    table?: DomEle;
     header?: {
-        wrapper?: ReactNode;
-        thead?: ReactNode;
-        row?: ReactNode;
-        th?: ReactNode;
-        cell?: ReactNode;
+        wrapper?: DomEle;
+        thead?: DomEle;
+        row?: DomEle;
+        th?: DomEle;
+        cell?: DomEle;
     },
     body?: {
-        wrapper?: ReactNode;
-        tbody?: ReactNode;
-        row?: ReactNode;
-        td?: ReactNode;
-        cell?: ReactNode;
+        wrapper?: DomEle;
+        tbody?: DomEle;
+        row?: DomEle;
+        td?: DomEle;
+        cell?: DomEle;
     }
 }

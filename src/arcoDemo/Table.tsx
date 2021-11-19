@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table,TableColumnProps } from '@arco-design/web-react'
-interface DataType {
+export interface DataType {
     driverNo?: string;
     name?: string;
     idCard?: string;
